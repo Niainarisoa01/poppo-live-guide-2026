@@ -24,26 +24,25 @@ export default function Footer() {
             <p className="footer-subtext">Contact the staff for the latest Invite Agent Policy.</p>
           </div>
 
-          {/* Section Navigation & Contact */}
-          <div className="footer-links">
-            <div className="footer-nav">
-              <h4>Navigation Rapide</h4>
-              <ul>
-                <li><Link href="/">Accueil</Link></li>
-                <li><Link href="/sections/introduction">Introduction</Link></li>
-                <li><Link href="/sections/inscription-configuration">Inscription</Link></li>
-                <li><Link href="/sections/gagner-argent-agent">Espace Agent</Link></li>
-              </ul>
-            </div>
-            
-            <div className="footer-contact">
-              <h4>Contact & Support</h4>
-              <p>Une question ou besoin d'aide pour votre inscription ?</p>
-              <ul>
-                <li>📧 <strong>Email :</strong> contact@poppo-live-guide.com</li>
-                <li>💬 <strong>WhatsApp :</strong> +261 34 00 000 00 <span style={{fontSize: '0.8rem', opacity: 0.7}}>(Remplacer par votre numéro)</span></li>
-              </ul>
-            </div>
+          {/* Section Navigation */}
+          <div className="footer-nav">
+            <h4>Navigation Rapide</h4>
+            <ul>
+              <li><Link href="/">Accueil</Link></li>
+              <li><Link href="/sections/introduction">Introduction</Link></li>
+              <li><Link href="/sections/inscription-configuration">Inscription</Link></li>
+              <li><Link href="/sections/gagner-argent-agent">Espace Agent</Link></li>
+            </ul>
+          </div>
+          
+          {/* Section Contact */}
+          <div className="footer-contact">
+            <h4>Contact & Support</h4>
+            <p>Une question ou besoin d'aide pour votre inscription ?</p>
+            <ul>
+              <li>📧 <strong>Email :</strong> contact@poppo-live-guide.com</li>
+              <li>💬 <strong>WhatsApp :</strong> +261 34 00 000 00 <span style={{fontSize: '0.8rem', opacity: 0.7}}>(Remplacer par votre numéro)</span></li>
+            </ul>
           </div>
 
         </div>

@@ -1258,7 +1258,7 @@ li::marker { color: var(--accent-purple); }
 
 @media (min-width: 768px) {
   .footer-grid {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1306,18 +1306,7 @@ li::marker { color: var(--accent-purple); }
   color: white;
 }
 
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
 
-@media (min-width: 768px) {
-  .footer-links {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
 
 .footer-nav h4, .footer-contact h4 {
   margin-top: 0;
@@ -1338,6 +1327,7 @@ li::marker { color: var(--accent-purple); }
   color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.2s;
+  outline: none;
 }
 
 .footer-nav a:hover {

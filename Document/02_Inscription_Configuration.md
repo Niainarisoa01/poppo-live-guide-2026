@@ -142,7 +142,7 @@ La vérification KYC complète est nécessaire pour les **retraits d'argent**.
 |--------|----------|-----------|
 | **Niveau 1** | Inscription simple | Accès basique (regarder, chatter) |
 | **Niveau 2** | Photo de profil ajoutée | Accès élargi |
-| **Niveau 3** | Face auth complétée | Possibilité de streamer |
+| **Niveau 3** | Face auth complétée | Possibilité de streamer (profils féminins) |
 | **Niveau 4** | Informations personnelles | Fonctionnalités avancées |
 | **Vérification KYC** | KYC complet (selfie) | **Retrait d'argent autorisé** |
 
@@ -211,8 +211,8 @@ La vérification KYC complète est nécessaire pour les **retraits d'argent**.
 ☐ Notifications activées
 ☐ Paramètres de confidentialité configurés
 ☐ Méthode de retrait liée au Wallet
-☐ KYC complété (Niveau 5) pour les retraits
-☐ Niveau 5 atteint pour pouvoir streamer
+☐ Vérification KYC complétée pour les retraits
+☐ Niveau 5 atteint pour pouvoir streamer (profils masculins)
 ```
 
 ---

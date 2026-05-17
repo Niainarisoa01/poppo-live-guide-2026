@@ -46,27 +46,37 @@ export default function Section01() {
 
       <h2>1.4 Modèle Économique de Poppo Live</h2>
       <p>Le modèle repose sur un <strong>écosystème circulaire</strong> :</p>
-      <CodeBlock>
-{`┌─────────────┐     Achète des Coins        ┌──────────────┐
-│   VIEWER    │ ──────────────────────────▶│   PLATEFORME │
-│ (Spectateur)│                             │  (Poppo Live)│
-└──────┬──────┘                             └──────┬───────┘
-       │                                           │
-       │ Envoie des cadeaux                        │ Retient ~30%
-       │ (Coins → Gifts)                           │
-       ▼                                           ▼
-┌──────────────┐     Convertit en cash     ┌──────────────┐
-│    HOST      │ ◀────────────────────────│   POINTS     │
-│  (Streamer)  │     (10K pts = 1$)        │  (~70% gift) │
-└──────┬───────┘                           └──────────────┘
-       │
-       │ Commission 4-20%
-       ▼
-┌──────────────┐
-│    AGENT     │
-│  (Manager)   │
-└──────────────┘`}
-      </CodeBlock>
+      <div className="eco-diagram">
+        <div className="eco-row">
+          <div className="eco-card viewer">
+            <h3>👤 Viewer</h3>
+            <p>Achète des Coins</p>
+          </div>
+          <div className="eco-arrow">
+            <strong>➔</strong>
+            <span>Envoie des cadeaux</span>
+          </div>
+          <div className="eco-card platform">
+            <h3>🏢 Plateforme</h3>
+            <p>Retient ~30%</p>
+          </div>
+        </div>
+        
+        <div className="eco-row">
+          <div className="eco-card agent">
+            <h3>💼 Agent</h3>
+            <p>Commission 4-20%</p>
+          </div>
+          <div className="eco-arrow">
+            <strong>⟵</strong>
+            <span>Commission</span>
+          </div>
+          <div className="eco-card host">
+            <h3>🎙️ Host</h3>
+            <p>Reçoit ~70% (Points)</p>
+          </div>
+        </div>
+      </div>
 
       <h3>Les 4 acteurs principaux</h3>
       <TableBlock

@@ -857,7 +857,7 @@ li::marker { color: var(--accent-purple); }
   color: white;
   font-size: 1.2rem;
   cursor: pointer;
-  z-index: 90;
+  z-index: 1001;
   opacity: 0;
   transform: translateY(10px);
   transition: var(--transition);
@@ -1152,16 +1152,37 @@ li::marker { color: var(--accent-purple); }
 
 @media (max-width: 767px) {
   .floating-cta {
-    bottom: 20px;
-    right: 50%;
-    transform: translateX(50%);
-    width: 90%;
-    justify-content: center;
-    animation: none; /* Disable floating on mobile so it stays clickable */
+    bottom: 16px;
+    left: 16px;
+    right: 70px;
+    width: auto;
+    animation: none;
+    padding: 0.6rem 1rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+  }
+
+  .cta-title {
+    font-size: 0.85rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .cta-icon {
+    font-size: 1.2rem;
   }
   
   .floating-cta:hover {
-    transform: translateX(50%) scale(1.02);
+    transform: none;
+  }
+
+  .scroll-top {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
   }
 }
 

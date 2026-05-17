@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import TableBlock from '../ui/TableBlock';
 import CodeBlock from '../ui/CodeBlock';
 import AlertBox from '../ui/AlertBox';
@@ -16,11 +17,15 @@ export default function Section02() {
           rel="noopener noreferrer"
           style={{ display: 'block', textDecoration: 'none' }}
         >
-          <img 
+          <Image 
             src="/poppolive.png" 
             alt="Poppo Live - Invitation Gift - Download Immediately" 
+            width={420}
+            height={850}
+            priority
             style={{ 
               width: '100%', 
+              height: 'auto',
               maxWidth: '420px', 
               borderRadius: 'var(--radius-lg)', 
               margin: '0 auto', 

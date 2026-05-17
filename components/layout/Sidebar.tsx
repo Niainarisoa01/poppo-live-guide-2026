@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { sections } from '@/lib/sections';
 
@@ -20,7 +21,10 @@ export default function Sidebar() {
         <button className="hamburger" onClick={() => setOpen(true)} aria-label="Menu">
           <span /><span /><span />
         </button>
-        <span className="mobile-title"><img src="/logo-Poppo.webp" alt="Poppo Live" style={{ width: '24px', height: '24px', borderRadius: '6px' }} /> Poppo Live Guide</span>
+        <span className="mobile-title">
+          <Image src="/logo-Poppo.webp" alt="Poppo Live Logo" width={24} height={24} style={{ borderRadius: '6px' }} /> 
+          Poppo Live Guide
+        </span>
       </header>
 
       {/* Overlay */}
@@ -32,7 +36,7 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside className={`sidebar ${open ? 'open' : ''}`}>
         <Link href="/" className="sidebar-logo" onClick={() => setOpen(false)}>
-          <img src="/logo-Poppo.webp" alt="Poppo Live" className="sidebar-logo-icon" style={{ width: '36px', height: '36px', borderRadius: '8px' }} />
+          <Image src="/logo-Poppo.webp" alt="Poppo Live Logo" className="sidebar-logo-icon" width={36} height={36} style={{ borderRadius: '8px' }} />
           <div>
             <div className="sidebar-logo-text">Poppo Live</div>
             <div className="sidebar-logo-sub">Guide Complet 2026</div>

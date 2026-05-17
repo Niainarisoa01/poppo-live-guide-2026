@@ -123,15 +123,38 @@ export default function Section01() {
       </ul>
 
       <h2>1.7 Chiffres Clés à Retenir</h2>
-      <CodeBlock>
-{`📊 Conversion : 10 000 points = 1 $ USD
-💰 Retrait minimum : 10 $ (100 000 points)
-🎁 Rétention host : ~70% de la valeur des cadeaux
-📈 Commission agent : 4% à 20% (selon performance)
-⏰ Heures de pointe : 20h - 23h (heure locale)
-👥 Minimum hosts/agence : 5+ hosts actifs
-🆓 Inscription agent : TOUJOURS GRATUITE`}
-      </CodeBlock>
+      <div className="stats-grid">
+        <div className="stat-card">
+          <div className="stat-icon">📊</div>
+          <div className="stat-title">Conversion</div>
+          <div className="stat-value">10k pts = 1$</div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon">💰</div>
+          <div className="stat-title">Retrait minimum</div>
+          <div className="stat-value">10$ <span style={{fontSize: '0.8rem', color: 'var(--text-muted)'}}>(100k pts)</span></div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon">🎁</div>
+          <div className="stat-title">Rétention Host</div>
+          <div className="stat-value">~70%</div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon">📈</div>
+          <div className="stat-title">Commission Agent</div>
+          <div className="stat-value">4% à 20%</div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon">⏰</div>
+          <div className="stat-title">Heures de pointe</div>
+          <div className="stat-value">20h - 23h</div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-icon">🆓</div>
+          <div className="stat-title">Inscription Agent</div>
+          <div className="stat-value" style={{color: 'var(--accent-green)'}}>Gratuite</div>
+        </div>
+      </div>
     </>
   );
 }

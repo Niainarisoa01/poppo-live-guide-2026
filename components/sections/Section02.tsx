@@ -83,27 +83,66 @@ export default function Section02() {
 
       <h3>Bio/Description — Optimisation</h3>
       <p>Votre bio influence l'algorithme de découverte. Structurez-la ainsi :</p>
-      <CodeBlock>
-{`📌 Format recommandé :
-
-🎤 [Votre talent principal] | 🌍 [Votre pays/ville]
-⏰ Live tous les jours à [heure] !
-💬 [Phrase d'accroche personnelle]
-#[mot-clé1] #[mot-clé2] #[mot-clé3]`}
-      </CodeBlock>
+      <div className="profile-preview">
+        <div className="profile-header">
+          <div className="profile-avatar">🎤</div>
+          <div>
+            <h4 className="profile-name">Votre pseudo</h4>
+            <p className="profile-location">🌍 Votre pays/ville</p>
+          </div>
+        </div>
+        <p className="profile-bio">
+          ⏰ Live tous les jours à [heure] !<br/>
+          💬 [Phrase d'accroche personnelle]
+        </p>
+        <div className="profile-tags">
+          <span className="profile-tag">#mot-clé1</span>
+          <span className="profile-tag">#mot-clé2</span>
+          <span className="profile-tag">#mot-clé3</span>
+        </div>
+      </div>
 
       <p><strong>Exemples :</strong></p>
-      <CodeBlock>
-{`🎤 Chanteuse & DJ | 🌍 Madagascar
-⏰ Live tous les jours à 20h !
-💬 Venez partager un bon moment musical ensemble 🎶
-#music #live #chill
+      
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
+        <div className="profile-preview" style={{ flex: '1 1 300px', margin: 0 }}>
+          <div className="profile-header">
+            <div className="profile-avatar">✨</div>
+            <div>
+              <h4 className="profile-name">Chanteuse & DJ</h4>
+              <p className="profile-location">🌍 Madagascar</p>
+            </div>
+          </div>
+          <p className="profile-bio">
+            ⏰ Live tous les jours à 20h !<br/>
+            💬 Venez partager un bon moment musical ensemble 🎶
+          </p>
+          <div className="profile-tags">
+            <span className="profile-tag">#music</span>
+            <span className="profile-tag">#live</span>
+            <span className="profile-tag">#chill</span>
+          </div>
+        </div>
 
-💃 Danse & Entertainment | 🌍 Paris
-⏰ Live lundi-samedi 19h-22h
-💬 Bonne ambiance garantie ✨
-#dance #party #fun`}
-      </CodeBlock>
+        <div className="profile-preview" style={{ flex: '1 1 300px', margin: 0 }}>
+          <div className="profile-header">
+            <div className="profile-avatar">💃</div>
+            <div>
+              <h4 className="profile-name">Danse & Entertainment</h4>
+              <p className="profile-location">🌍 Paris</p>
+            </div>
+          </div>
+          <p className="profile-bio">
+            ⏰ Live lundi-samedi 19h-22h<br/>
+            💬 Bonne ambiance garantie ✨
+          </p>
+          <div className="profile-tags">
+            <span className="profile-tag">#dance</span>
+            <span className="profile-tag">#party</span>
+            <span className="profile-tag">#fun</span>
+          </div>
+        </div>
+      </div>
 
       <h2>2.4 Authentification Faciale (Face Auth)</h2>
       <p>L'authentification faciale est <strong>OBLIGATOIRE</strong> pour :</p>
@@ -220,19 +259,19 @@ export default function Section02() {
       />
 
       <h2>2.8 Checklist Complète d'Installation</h2>
-      <CodeBlock>
-{`☐ App téléchargée depuis une source officielle
-☐ Compte créé et vérifié
-☐ Photo de profil claire et engageante ajoutée
-☐ Bio optimisée avec mots-clés
-☐ Authentification faciale réussie
-☐ Poppo ID noté en lieu sûr
-☐ Notifications activées
-☐ Paramètres de confidentialité configurés
-☐ Méthode de retrait liée au Wallet
-☐ KYC complété (Niveau 5) pour les retraits
-☐ Niveau 5 atteint pour pouvoir streamer`}
-      </CodeBlock>
+      <ul className="checklist" style={{ background: 'var(--bg-card)', padding: '1.5rem 1.5rem 1.5rem 2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border-subtle)', marginTop: '1rem' }}>
+        <li>App téléchargée depuis une source officielle</li>
+        <li>Compte créé et vérifié</li>
+        <li>Photo de profil claire et engageante ajoutée</li>
+        <li>Bio optimisée avec mots-clés</li>
+        <li>Authentification faciale réussie</li>
+        <li>Poppo ID noté en lieu sûr</li>
+        <li>Notifications activées</li>
+        <li>Paramètres de confidentialité configurés</li>
+        <li>Méthode de retrait liée au Wallet</li>
+        <li>KYC complété (Niveau 5) pour les retraits</li>
+        <li>Niveau 5 atteint pour pouvoir streamer</li>
+      </ul>
     </>
   );
 }

@@ -30,7 +30,9 @@ export default function Section09() {
       
       <h3>Cas 1 : Gestion Directe de Hosts</h3>
       <p>Si vous gérez directement vos streamers.</p>
-      <CodeBlock>Revenu de l'Agence = (Total des Points des Hosts) × (Votre Taux de Commission)</CodeBlock>
+      <div className="formula-box">
+        Revenu de l'Agence = (Total des Points des Hosts) × (Votre Taux de Commission)
+      </div>
       <p><strong>Exemple :</strong></p>
       <ul>
         <li>Vos 10 hosts génèrent un total de 20 Millions de points ce mois-ci.</li>
@@ -41,7 +43,9 @@ export default function Section09() {
 
       <h3>Cas 2 : Gestion de Sub-Agents (Sous-agents)</h3>
       <p>Si vous recrutez d'autres agents sous vous, vous touchez la différence entre votre palier et le leur.</p>
-      <CodeBlock>Commission Sub-Agent = (Points du Sub-Agent) × (Votre Taux - Taux du Sub-Agent)</CodeBlock>
+      <div className="formula-box">
+        Commission Sub-Agent = (Points du Sub-Agent) × (Votre Taux - Taux du Sub-Agent)
+      </div>
       <p><strong>Exemple :</strong></p>
       <ul>
         <li>Vous êtes <strong>Level A (16%)</strong>.</li>

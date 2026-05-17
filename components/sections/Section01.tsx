@@ -47,35 +47,56 @@ export default function Section01() {
       <h2>1.4 Modèle Économique de Poppo Live</h2>
       <p>Le modèle repose sur un <strong>écosystème circulaire</strong> :</p>
       <div className="eco-diagram">
-        <div className="eco-row">
-          <div className="eco-card viewer">
-            <h3>👤 Viewer</h3>
-            <p>Achète des Coins</p>
-          </div>
-          <div className="eco-arrow">
-            <strong>➔</strong>
-            <span>Envoie des cadeaux</span>
-          </div>
-          <div className="eco-card platform">
-            <h3>🏢 Plateforme</h3>
-            <p>Retient ~30%</p>
-          </div>
+        {/* Top Left */}
+        <div className="eco-card viewer">
+          <h3>👤 Viewer</h3>
+          <p>Achète des Coins</p>
         </div>
-        
-        <div className="eco-row">
-          <div className="eco-card agent">
-            <h3>💼 Agent</h3>
-            <p>Commission 4-20%</p>
-          </div>
-          <div className="eco-arrow">
-            <strong>⟵</strong>
-            <span>Commission</span>
-          </div>
-          <div className="eco-card host">
-            <h3>🎙️ Host</h3>
-            <p>Reçoit ~70% (Points)</p>
-          </div>
+
+        {/* Arrow Top (Viewer -> Platform) */}
+        <div className="eco-arrow top">
+          <strong className="eco-arrow-icon">➔</strong>
+          <span className="eco-arrow-text">Envoie des{'\n'}cadeaux</span>
         </div>
+
+        {/* Top Right */}
+        <div className="eco-card platform">
+          <h3>🏢 Plateforme</h3>
+          <p>Retient ~30%</p>
+        </div>
+
+        {/* Arrow Right (Platform -> Host) */}
+        <div className="eco-arrow right">
+          <strong className="eco-arrow-icon">➔</strong>
+          <span className="eco-arrow-text">Convertit en{'\n'}Points</span>
+        </div>
+
+        {/* Bottom Right */}
+        <div className="eco-card host">
+          <h3>🎙️ Host</h3>
+          <p>Reçoit ~70% (Points)</p>
+        </div>
+
+        {/* Arrow Bottom (Host -> Agent) */}
+        <div className="eco-arrow bottom">
+          <strong className="eco-arrow-icon">➔</strong>
+          <span className="eco-arrow-text">Génère{'\n'}Commission</span>
+        </div>
+
+        {/* Bottom Left */}
+        <div className="eco-card agent">
+          <h3>💼 Agent</h3>
+          <p>Touche 4-20%</p>
+        </div>
+
+        {/* Arrow Left (Agent -> Viewer / Cycle completes) */}
+        <div className="eco-arrow left">
+          <strong className="eco-arrow-icon">➔</strong>
+          <span className="eco-arrow-text">Recrute / Gère</span>
+        </div>
+
+        {/* Center decorative element */}
+        <div className="eco-center-logo">🔄</div>
       </div>
 
       <h3>Les 4 acteurs principaux</h3>

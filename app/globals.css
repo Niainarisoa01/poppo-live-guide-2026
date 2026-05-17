@@ -563,6 +563,26 @@ li::marker { color: var(--accent-purple); }
   color: white;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-cta-secondary {
+  background: transparent;
+  border: 2px solid var(--accent-primary);
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
+.hero-cta-secondary:hover {
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--accent-primary);
+  box-shadow: 0 8px 30px rgba(139,92,246,0.15);
+}
+
 /* Section cards on hero */
 .hero-sections {
   padding: 4rem 2rem;

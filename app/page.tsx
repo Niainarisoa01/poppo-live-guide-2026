@@ -32,9 +32,19 @@ export default function HomePage() {
             </div>
           </div>
 
-          <Link href="/sections/introduction" className="hero-cta">
-            Commencer le Guide →
-          </Link>
+          <div className="hero-buttons">
+            <Link href="/sections/introduction" className="hero-cta">
+              Commencer le Guide →
+            </Link>
+            <a 
+              href="https://h5.vshowapi.com/guild/agency_invite/register?inviter_id=74202178&c=poppo" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hero-cta hero-cta-secondary"
+            >
+              Créer mon Agence / S'inscrire
+            </a>
+          </div>
         </div>
       </section>
 

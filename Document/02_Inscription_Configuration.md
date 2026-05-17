@@ -141,9 +141,6 @@ La vérification KYC complète est nécessaire pour les **retraits d'argent**.
 | Niveau | Exigence | Déblocage |
 |--------|----------|-----------|
 | **Niveau 1** | Inscription simple | Accès basique (regarder, chatter) |
-| **Niveau 2** | Photo de profil ajoutée | Accès élargi |
-| **Niveau 3** | Face auth complétée | Possibilité de streamer (profils féminins) |
-| **Niveau 4** | Informations personnelles | Fonctionnalités avancées |
 | **Vérification KYC** | KYC complet (selfie) | **Retrait d'argent autorisé** |
 
 ---

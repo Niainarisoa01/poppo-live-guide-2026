@@ -213,6 +213,9 @@ li::marker { color: var(--accent-purple); }
 .hamburger:hover { background: var(--bg-card-hover); }
 
 .mobile-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1rem;
@@ -1061,6 +1064,17 @@ li::marker { color: var(--accent-purple); }
   .section-nav { flex-direction: column; }
   .section-nav-btn.next { text-align: left; }
   .sections-grid { grid-template-columns: 1fr; }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    padding: 0.9rem 1.5rem;
+  }
   .section-title { font-size: 1.5rem; }
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.4rem; }

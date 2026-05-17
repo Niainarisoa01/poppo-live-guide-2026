@@ -20,7 +20,7 @@ export default function TableBlock({ headers, rows }: TableBlockProps) {
           {rows.map((row, ri) => (
             <tr key={ri}>
               {row.map((cell, ci) => (
-                <td key={ci} dangerouslySetInnerHTML={{ __html: cell }} />
+                <td key={ci} data-label={headers[ci]} dangerouslySetInnerHTML={{ __html: cell }} />
               ))}
             </tr>
           ))}

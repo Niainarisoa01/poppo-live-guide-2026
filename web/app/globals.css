@@ -714,4 +714,54 @@ li::marker { color: var(--accent-purple); }
   .section-title { font-size: 1.5rem; }
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.4rem; }
+
+  /* Mobile Tables as Cards */
+  .table-wrapper {
+    border: none;
+    background: transparent;
+    overflow-x: visible;
+  }
+  
+  .table-styled thead {
+    display: none;
+  }
+  
+  .table-styled, .table-styled tbody, .table-styled tr, .table-styled td {
+    display: block;
+    width: 100%;
+  }
+  
+  .table-styled tr {
+    margin-bottom: 1.5rem;
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  .table-styled td {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border-subtle);
+    position: relative;
+    color: var(--text-primary);
+  }
+  
+  .table-styled td:last-child {
+    border-bottom: none;
+  }
+  
+  .table-styled td::before {
+    content: attr(data-label);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--accent-purple);
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    display: block;
+    letter-spacing: 0.05em;
+  }
 }

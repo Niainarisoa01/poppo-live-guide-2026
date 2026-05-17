@@ -7,9 +7,13 @@ export default function Section13() {
     <>
       <h2>13.1 Conditions Préalables au Retrait</h2>
       <p>Avant de pouvoir retirer le moindre centime, vous <strong>DEVEZ</strong> remplir ces conditions strictes :</p>
+      <AlertBox variant="info">
+        <strong>MISE À JOUR :</strong> La <strong>vérification faciale (KYC)</strong> est désormais la condition absolue pour débloquer les retraits d'argent. Aucun retrait n'est possible sans cette étape validée.
+      </AlertBox>
+
       <ol>
+        <li><strong>Vérification Faciale (KYC) Obligatoire :</strong> Vous devez avoir soumis votre selfie et pièce d'identité et avoir été approuvé par le système. Sans le badge KYC (Authentification), le bouton de retrait est désactivé.</li>
         <li><strong>Niveau Livestream :</strong> Avoir atteint le <strong>Level 5</strong>.</li>
-        <li><strong>KYC Validé :</strong> Avoir soumis votre carte d'identité + selfie et été approuvé.</li>
         <li><strong>Sécurité 2FA (Nouveauté 2026) :</strong> L'authentification à deux facteurs est désormais obligatoire. Un code à 6 chiffres valide 30 secondes sera demandé à chaque retrait.</li>
         <li><strong>Version de l'App :</strong> Vous devez obligatoirement utiliser la <strong>version 2.9.6 ou supérieure</strong> de l'application Poppo Live (ou Vone en Inde).</li>
         <li><strong>Solde Minimum :</strong> Posséder au moins <strong>100 000 Points</strong>.</li>

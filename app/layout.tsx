@@ -26,12 +26,27 @@ export const metadata: Metadata = {
     title: 'Guide Poppo Live 2026',
     description: 'Le guide complet pour réussir sur Poppo Live.',
   },
+  alternates: {
+    canonical: 'https://poppo-live-guide.vercel.app',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Guide Poppo Live 2026',
+    url: 'https://poppo-live-guide.vercel.app',
+    description: 'Le guide complet et à jour pour réussir sur Poppo Live en 2026.',
+  };
+
   return (
     <html lang="fr">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="app-layout">
           <Sidebar />
           <ReadingProgress />

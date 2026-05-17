@@ -63,6 +63,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       url: `https://poppo-live-guide.vercel.app/sections/${section.slug}`,
     },
+    alternates: {
+      canonical: `https://poppo-live-guide.vercel.app/sections/${section.slug}`,
+    },
   };
 }
 
@@ -75,8 +78,24 @@ export default async function SectionPage({ params }: { params: Promise<{ slug: 
   const Content = componentMap[resolvedParams.slug];
   if (!Content) notFound();
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${section.icon} ${section.title}`,
+    description: `Section ${section.num} du guide complet Poppo Live 2026 : ${section.title}.`,
+    author: {
+      '@type': 'Organization',
+      name: 'Guide Poppo Live',
+    },
+    url: `https://poppo-live-guide.vercel.app/sections/${section.slug}`,
+  };
+
   return (
     <div className="page-content fade-in">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="section-badge">
         <span>{section.icon}</span>
         <span>Section {section.num} sur 18</span>

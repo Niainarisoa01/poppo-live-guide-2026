@@ -49,7 +49,7 @@ export default function Section05() {
         rows={[
           ['<strong>Niveau 1</strong>', 'Compte créé, accès basique'],
           ['<strong>Niveau 3</strong>', 'Accès à certaines fonctionnalités sociales'],
-          ['<strong>Niveau 5</strong>', '<strong>CRITIQUE</strong> : Possibilité de passer en Live + retrait d\'argent'],
+          ['<strong>Niveau 5</strong>', '<strong>CRITIQUE</strong> : Possibilité de passer en Live pour profil Masculin'],
           ['<strong>Niveau 10+</strong>', 'Fonctionnalités PK avancées'],
           ['<strong>Niveau 20+</strong>', 'Analytics avancés, meilleure visibilité'],
           ['<strong>Niveau 50+</strong>', 'Perks premium, recommandation algorithme'],

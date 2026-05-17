@@ -125,7 +125,7 @@ L'authentification faciale est **OBLIGATOIRE** pour :
 
 ---
 
-## 2.5 Vérification KYC (Know Your Customer) — Niveau 5
+## 2.5 Vérification KYC (Know Your Customer)
 
 La vérification KYC complète est nécessaire pour les **retraits d'argent**.
 
@@ -144,7 +144,7 @@ La vérification KYC complète est nécessaire pour les **retraits d'argent**.
 | **Niveau 2** | Photo de profil ajoutée | Accès élargi |
 | **Niveau 3** | Face auth complétée | Possibilité de streamer |
 | **Niveau 4** | Informations personnelles | Fonctionnalités avancées |
-| **Niveau 5** | KYC complet (ID + selfie) | **Retrait d'argent autorisé** |
+| **Vérification KYC** | KYC complet (selfie) | **Retrait d'argent autorisé** |
 
 ---
 

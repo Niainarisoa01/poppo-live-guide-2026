@@ -48,7 +48,7 @@ Poppo Live utilise **deux barres de progression indépendantes** :
 |--------|-----------|
 | **Niveau 1** | Compte créé, accès basique |
 | **Niveau 3** | Accès à certaines fonctionnalités sociales |
-| **Niveau 5** | **CRITIQUE** : Possibilité de passer en Live + retrait d'argent |
+| **Niveau 5** | **CRITIQUE** : Possibilité de passer en Live pour profil Masculin|
 | **Niveau 10+** | Fonctionnalités PK avancées |
 | **Niveau 20+** | Analytics avancés, meilleure visibilité |
 | **Niveau 50+** | Perks premium, recommandation algorithme |

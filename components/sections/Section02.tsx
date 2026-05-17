@@ -11,35 +11,35 @@ export default function Section02() {
 
       {/* === HERO INSCRIPTION === */}
       <div className="inscription-hero">
-        <a 
-          href="https://invite-poppo.com/8p8baA" 
-          target="_blank" 
+        <a
+          href="https://invite-poppo.com/8p8baA"
+          target="_blank"
           rel="noopener noreferrer"
           style={{ display: 'block', textDecoration: 'none' }}
         >
-          <Image 
-            src="/poppolive.png" 
-            alt="Poppo Live - Invitation Gift - Download Immediately" 
+          <Image
+            src="/poppolive.png"
+            alt="Poppo Live - Invitation Gift - Download Immediately"
             width={420}
             height={850}
             priority
-            style={{ 
-              width: '100%', 
+            style={{
+              width: '100%',
               height: 'auto',
-              maxWidth: '420px', 
-              borderRadius: 'var(--radius-lg)', 
-              margin: '0 auto', 
+              maxWidth: '420px',
+              borderRadius: 'var(--radius-lg)',
+              margin: '0 auto',
               display: 'block',
               boxShadow: '0 20px 60px rgba(124, 58, 237, 0.3)',
-            }} 
+            }}
           />
         </a>
       </div>
 
       <div style={{ textAlign: 'center', margin: '2rem 0 3rem' }}>
-        <a 
-          href="https://invite-poppo.com/8p8baA" 
-          target="_blank" 
+        <a
+          href="https://invite-poppo.com/8p8baA"
+          target="_blank"
           rel="noopener noreferrer"
           className="inline-cta"
         >
@@ -170,7 +170,7 @@ export default function Section02() {
           </div>
         </div>
         <p className="profile-bio">
-          ⏰ Live tous les jours à [heure] !<br/>
+          ⏰ Live tous les jours à [heure] !<br />
           💬 [Phrase d'accroche personnelle]
         </p>
         <div className="profile-tags">
@@ -181,7 +181,7 @@ export default function Section02() {
       </div>
 
       <p><strong>Exemples :</strong></p>
-      
+
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem' }}>
         <div className="profile-preview" style={{ flex: '1 1 300px', margin: 0 }}>
           <div className="profile-header">
@@ -192,7 +192,7 @@ export default function Section02() {
             </div>
           </div>
           <p className="profile-bio">
-            ⏰ Live tous les jours à 20h !<br/>
+            ⏰ Live tous les jours à 20h !<br />
             💬 Venez partager un bon moment musical ensemble 🎶
           </p>
           <div className="profile-tags">
@@ -211,7 +211,7 @@ export default function Section02() {
             </div>
           </div>
           <p className="profile-bio">
-            ⏰ Live lundi-samedi 19h-22h<br/>
+            ⏰ Live lundi-samedi 19h-22h<br />
             💬 Bonne ambiance garantie ✨
           </p>
           <div className="profile-tags">
@@ -255,7 +255,7 @@ export default function Section02() {
         Si la vérification échoue 3 fois, vous devrez attendre 24h avant de réessayer.
       </AlertBox>
 
-      <h2>2.5 Vérification KYC (Know Your Customer) — Niveau 5</h2>
+      <h2>2.5 Vérification KYC (Know Your Customer)</h2>
       <p>La vérification KYC complète est nécessaire pour les <strong>retraits d'argent</strong>.</p>
 
       <h3>Documents requis</h3>
@@ -275,7 +275,7 @@ export default function Section02() {
           ['<strong>Niveau 2</strong>', 'Photo de profil ajoutée', 'Accès élargi'],
           ['<strong>Niveau 3</strong>', 'Face auth complétée', 'Possibilité de streamer'],
           ['<strong>Niveau 4</strong>', 'Informations personnelles', 'Fonctionnalités avancées'],
-          ['<strong>Niveau 5</strong>', 'KYC complet (ID + selfie)', '<strong>Retrait d\'argent autorisé</strong>'],
+          ['<strong>Vérification KYC</strong>', 'KYC complet (selfie)', '<strong>Retrait d\'argent autorisé</strong>'],
         ]}
       />
 
@@ -352,9 +352,9 @@ export default function Section02() {
       </ul>
 
       <div style={{ textAlign: 'center', margin: '4rem 0 2rem' }}>
-        <a 
-          href="https://invite-poppo.com/8p8baA" 
-          target="_blank" 
+        <a
+          href="https://invite-poppo.com/8p8baA"
+          target="_blank"
           rel="noopener noreferrer"
           className="inline-cta"
         >

@@ -40,7 +40,7 @@ export default function Footer() {
             <h4>Contact & Support</h4>
             <p>Une question ou besoin d'aide pour votre inscription ?</p>
             <ul>
-              <li>📧 <strong>Email :</strong> contact@poppo-live-guide.com</li>
+              <li>📧 <strong>Email :</strong> guide.poppo.live@gmail.com</li>
               <li>💬 <strong>WhatsApp :</strong> +261 34 48 252 85</li>
             </ul>
           </div>
@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} Poppo Live Guide 2026. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Poppo Live Guide. Tous droits réservés.</p>
           <p className="footer-disclaimer">Ce site est un guide indépendant et n'est pas affilié officiellement à Poppo Live.</p>
         </div>
       </div>

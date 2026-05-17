@@ -5,6 +5,7 @@ import ScrollToTop from '@/components/ui/ScrollToTop';
 import ReadingProgress from '@/components/ui/ReadingProgress';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 import Footer from '@/components/layout/Footer';
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   title: {
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ScrollToTop />
           <FloatingCTA />
         </div>
+        <Analytics />
       </body>
     </html>
   );

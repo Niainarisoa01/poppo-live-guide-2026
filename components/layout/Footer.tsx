@@ -9,9 +9,9 @@ export default function Footer() {
           
           {/* Section Invite Agent */}
           <div className="footer-card invite-agent-card">
-            <h3>🤝 Invite Agent (Level 5+)</h3>
+            <h3>🤝 Programme Agent (Niveau 5+)</h3>
             <p>
-              Copy the link to invite the agent. After the agency application has been approved successfully, you will enjoy the commission for the earnings of the invite agent.
+              Débloquez une nouvelle source de revenus ! Invitez de nouveaux agents et touchez une <strong>commission permanente</strong> sur tous leurs gains une fois leur agence approuvée.
             </p>
             <a 
               href="https://h5.vshowapi.com/guild/agency_invite/register?inviter_id=74202178&c=poppo" 
@@ -19,9 +19,9 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="footer-cta"
             >
-              Devenir / Inviter un Agent
+              Devenir Agent / Parrainer
             </a>
-            <p className="footer-subtext">Contact the staff for the latest Invite Agent Policy.</p>
+            <p className="footer-subtext">Contactez-nous pour connaître les détails de la politique de commissions.</p>
           </div>
 
           {/* Section Navigation */}

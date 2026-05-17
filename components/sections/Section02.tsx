@@ -6,22 +6,95 @@ import AlertBox from '../ui/AlertBox';
 export default function Section02() {
   return (
     <>
-      <h2>2.1 Téléchargement de l'Application</h2>
-      <h3>Plateformes officielles</h3>
-      <TableBlock
-        headers={['Plateforme', 'Lien', 'Gratuit']}
-        rows={[
-          ['<strong>Android</strong>', 'Google Play Store → rechercher "Poppo Live"', '✅ Oui'],
-          ['<strong>iOS</strong>', 'Apple App Store → rechercher "Poppo Live"', '✅ Oui'],
-        ]}
-      />
+      <h2>2.1 Téléchargement & Inscription — Guide Rapide</h2>
 
-      <AlertBox variant="info">
-        <strong>NOTE IMPORTANTE (Mai 2026) - Utilisateurs Indiens :</strong> À cause des régulations spécifiques en Inde, les utilisateurs de cette région doivent télécharger l'application <strong>Vone</strong>. C'est la version locale officielle de Poppo Live avec des fonctionnalités strictement identiques.
+      {/* === HERO INSCRIPTION === */}
+      <div className="inscription-hero">
+        <a 
+          href="https://invite-poppo.com/8p8baA" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ display: 'block', textDecoration: 'none' }}
+        >
+          <img 
+            src="/poppolive.png" 
+            alt="Poppo Live - Invitation Gift - Download Immediately" 
+            style={{ 
+              width: '100%', 
+              maxWidth: '420px', 
+              borderRadius: 'var(--radius-lg)', 
+              margin: '0 auto', 
+              display: 'block',
+              boxShadow: '0 20px 60px rgba(124, 58, 237, 0.3)',
+            }} 
+          />
+        </a>
+      </div>
+
+      <div style={{ textAlign: 'center', margin: '2rem 0 3rem' }}>
+        <a 
+          href="https://invite-poppo.com/8p8baA" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-cta"
+        >
+          <span style={{ fontSize: '2rem' }}>🎁</span>
+          <div style={{ textAlign: 'left' }}>
+            <div style={{ lineHeight: '1.2' }}>Cliquez ici pour vous inscrire</div>
+            <div style={{ fontSize: '0.85rem', fontWeight: 'normal', opacity: 0.9 }}>Bonus d&apos;inscription gratuit !</div>
+          </div>
+        </a>
+      </div>
+
+      <AlertBox variant="tip">
+        <strong>🚀 INSTRUCTIONS RAPIDES :</strong> Cliquez sur le lien ci-dessus ou sur l&apos;image → Appuyez sur <strong>&quot;Download Immediately&quot;</strong> → Vous serez redirigé vers le <strong>Play Store / App Store</strong> → Téléchargez l&apos;application → Inscrivez-vous → Faites la <strong>vérification faciale</strong> → Lancez votre <strong>premier live immédiatement</strong> pour ne pas rater le <strong>bonus de bienvenue</strong> ! 🎉
       </AlertBox>
 
+      <h3>📋 Les 5 étapes pour commencer</h3>
+      <div className="workflow-diagram">
+        <div className="workflow-step">
+          <div className="workflow-icon">📲</div>
+          <div className="workflow-content">
+            <h4>Étape 1 : Télécharger</h4>
+            <p>Cliquez sur le lien d&apos;inscription ci-dessus, puis appuyez sur &quot;Download Immediately&quot;</p>
+          </div>
+        </div>
+        <div className="workflow-arrow">➔</div>
+        <div className="workflow-step">
+          <div className="workflow-icon">📝</div>
+          <div className="workflow-content">
+            <h4>Étape 2 : S&apos;inscrire</h4>
+            <p>Créez votre compte avec votre numéro de téléphone ou Google/Facebook</p>
+          </div>
+        </div>
+        <div className="workflow-arrow">➔</div>
+        <div className="workflow-step">
+          <div className="workflow-icon">🤳</div>
+          <div className="workflow-content">
+            <h4>Étape 3 : Vérification faciale</h4>
+            <p>Faites votre vérification faciale immédiatement après l&apos;inscription</p>
+          </div>
+        </div>
+        <div className="workflow-arrow">➔</div>
+        <div className="workflow-step">
+          <div className="workflow-icon">🎬</div>
+          <div className="workflow-content">
+            <h4>Étape 4 : Lancez votre premier live !</h4>
+            <p>Allez en live <strong>tout de suite</strong> pour obtenir votre bonus de bienvenue</p>
+          </div>
+        </div>
+        <div className="workflow-arrow">➔</div>
+        <div className="workflow-step" style={{ borderTopColor: 'var(--accent-green)' }}>
+          <div className="workflow-icon">💰</div>
+          <div className="workflow-content">
+            <h4>Étape 5 : Gagnez de l&apos;argent</h4>
+            <p>Recevez des cadeaux et convertissez vos points en argent réel</p>
+          </div>
+        </div>
+      </div>
+
       <AlertBox variant="warning">
-        <strong>ATTENTION :</strong> Ne téléchargez JAMAIS l'app depuis des sources non officielles (APK tiers, sites web douteux). Les versions modifiées peuvent contenir des malwares et mèneront à un <strong>ban permanent</strong> de votre compte.
+        <strong>⚠️ IMPORTANT :</strong> Ne ratez PAS le bonus ! Lancez votre <strong>premier live dans les 24 heures</strong> suivant votre inscription pour recevoir le bonus de bienvenue complet. Plus vous attendez, moins le bonus sera élevé.
       </AlertBox>
 
       <h3>Configuration minimale requise</h3>
@@ -272,6 +345,21 @@ export default function Section02() {
         <li>KYC complété (Niveau 5) pour les retraits</li>
         <li>Niveau 5 atteint pour pouvoir streamer</li>
       </ul>
+
+      <div style={{ textAlign: 'center', margin: '4rem 0 2rem' }}>
+        <a 
+          href="https://invite-poppo.com/8p8baA" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-cta"
+        >
+          <span style={{ fontSize: '2rem' }}>🚀</span>
+          <div style={{ textAlign: 'left' }}>
+            <div style={{ lineHeight: '1.2' }}>Créer mon compte Poppo Live</div>
+            <div style={{ fontSize: '0.85rem', fontWeight: 'normal', opacity: 0.9 }}>Lien d'inscription officiel</div>
+          </div>
+        </a>
+      </div>
     </>
   );
 }

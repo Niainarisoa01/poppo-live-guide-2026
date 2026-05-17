@@ -41,7 +41,7 @@ export default function Footer() {
             <p>Une question ou besoin d'aide pour votre inscription ?</p>
             <ul>
               <li>📧 <strong>Email :</strong> contact@poppo-live-guide.com</li>
-              <li>💬 <strong>WhatsApp :</strong> +261 34 00 000 00 <span style={{fontSize: '0.8rem', opacity: 0.7}}>(Remplacer par votre numéro)</span></li>
+              <li>💬 <strong>WhatsApp :</strong> +261 34 48 252 85</li>
             </ul>
           </div>
 

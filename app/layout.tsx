@@ -3,6 +3,7 @@ import './globals.css';
 import Sidebar from '@/components/layout/Sidebar';
 import ScrollToTop from '@/components/ui/ScrollToTop';
 import ReadingProgress from '@/components/ui/ReadingProgress';
+import FloatingCTA from '@/components/ui/FloatingCTA';
 
 export const metadata: Metadata = {
   title: 'Guide Poppo Live 2026 — Le Guide Complet',
@@ -20,6 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
           <ScrollToTop />
+          <FloatingCTA />
         </div>
       </body>
     </html>

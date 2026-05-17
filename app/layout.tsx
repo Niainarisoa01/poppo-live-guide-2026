@@ -53,8 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ReadingProgress />
           <main className="main-content">
             {children}
+            <Footer />
           </main>
-          <Footer />
           <ScrollToTop />
           <FloatingCTA />
         </div>

@@ -49,9 +49,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const resolvedParams = await params;
   const section = getSectionBySlug(resolvedParams.slug);
   if (!section) return {};
+  
+  const title = `${section.icon} ${section.title} — Guide Poppo Live 2026`;
+  const description = `Section ${section.num} du guide complet Poppo Live 2026 : ${section.title}. Astuces et détails complets.`;
+  
   return {
-    title: `${section.icon} ${section.title} — Guide Poppo Live 2026`,
-    description: `Section ${section.num} du guide complet Poppo Live 2026 : ${section.title}`,
+    title,
+    description,
+    keywords: ['Poppo Live', section.title, section.shortTitle, 'Guide Poppo 2026', `Section ${section.num}`],
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      url: `https://poppo-live-guide.vercel.app/sections/${section.slug}`,
+    },
   };
 }
 

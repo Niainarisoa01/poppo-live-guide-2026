@@ -6,8 +6,26 @@ import ReadingProgress from '@/components/ui/ReadingProgress';
 import FloatingCTA from '@/components/ui/FloatingCTA';
 
 export const metadata: Metadata = {
-  title: 'Guide Poppo Live 2026 — Le Guide Complet',
+  title: {
+    template: '%s | Guide Poppo Live 2026',
+    default: 'Guide Poppo Live 2026 — Le Guide Complet',
+  },
   description: 'Le guide complet et à jour pour réussir sur Poppo Live en 2026. Inscription, revenus, VIP, stratégies de croissance, règles et plus encore.',
+  keywords: ['Poppo Live', 'Guide Poppo', 'Gagner de l\'argent Poppo', 'Application de stream', 'Poppo Live Agent', 'Poppo Live Host', 'Revenus Poppo'],
+  authors: [{ name: 'Poppo Live Guide' }],
+  openGraph: {
+    title: 'Guide Poppo Live 2026 — Le Guide Complet',
+    description: 'Tout savoir sur Poppo Live : inscription, retraits, règles et stratégies de croissance.',
+    url: 'https://poppo-live-guide.vercel.app',
+    siteName: 'Guide Poppo Live 2026',
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guide Poppo Live 2026',
+    description: 'Le guide complet pour réussir sur Poppo Live.',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

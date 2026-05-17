@@ -20,7 +20,7 @@ export default function Sidebar() {
         <button className="hamburger" onClick={() => setOpen(true)} aria-label="Menu">
           <span /><span /><span />
         </button>
-        <span className="mobile-title">📱 Poppo Live Guide</span>
+        <span className="mobile-title"><img src="/logo-Poppo.webp" alt="Poppo Live" style={{ width: '24px', height: '24px', borderRadius: '6px' }} /> Poppo Live Guide</span>
       </header>
 
       {/* Overlay */}
@@ -32,7 +32,7 @@ export default function Sidebar() {
       {/* Sidebar */}
       <aside className={`sidebar ${open ? 'open' : ''}`}>
         <Link href="/" className="sidebar-logo" onClick={() => setOpen(false)}>
-          <div className="sidebar-logo-icon">📱</div>
+          <img src="/logo-Poppo.webp" alt="Poppo Live" className="sidebar-logo-icon" style={{ width: '36px', height: '36px', borderRadius: '8px' }} />
           <div>
             <div className="sidebar-logo-text">Poppo Live</div>
             <div className="sidebar-logo-sub">Guide Complet 2026</div>

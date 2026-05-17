@@ -42,7 +42,10 @@ export default function HomePage() {
               rel="noopener noreferrer" 
               className="hero-cta hero-cta-secondary"
             >
-              Créer mon Agence / S'inscrire
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: '1.2' }}>
+                <span>🎁 Cliquez ici pour vous inscrire</span>
+                <span style={{ fontSize: '0.8rem', fontWeight: 'normal', opacity: 0.9, marginTop: '2px' }}>Bonus d'inscription gratuit !</span>
+              </div>
             </a>
           </div>
         </div>

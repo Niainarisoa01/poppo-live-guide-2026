@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://poppo-live-guide.vercel.app',
   },
+  icons: {
+    icon: '/logo-Poppo.webp',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

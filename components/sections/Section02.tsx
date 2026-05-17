@@ -272,9 +272,6 @@ export default function Section02() {
         headers={['Niveau', 'Exigence', 'Déblocage']}
         rows={[
           ['<strong>Niveau 1</strong>', 'Inscription simple', 'Accès basique (regarder, chatter)'],
-          ['<strong>Niveau 2</strong>', 'Photo de profil ajoutée', 'Accès élargi'],
-          ['<strong>Niveau 3</strong>', 'Face auth complétée', 'Possibilité de streamer (profils féminins)'],
-          ['<strong>Niveau 4</strong>', 'Informations personnelles', 'Fonctionnalités avancées'],
           ['<strong>Vérification KYC</strong>', 'KYC complet (selfie)', '<strong>Retrait d\'argent autorisé</strong>'],
         ]}
       />

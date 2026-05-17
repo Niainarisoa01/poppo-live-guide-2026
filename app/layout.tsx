@@ -4,6 +4,7 @@ import Sidebar from '@/components/layout/Sidebar';
 import ScrollToTop from '@/components/ui/ScrollToTop';
 import ReadingProgress from '@/components/ui/ReadingProgress';
 import FloatingCTA from '@/components/ui/FloatingCTA';
+import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: {
@@ -53,6 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="main-content">
             {children}
           </main>
+          <Footer />
           <ScrollToTop />
           <FloatingCTA />
         </div>

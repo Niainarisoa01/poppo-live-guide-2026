@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <div className="hero-badge">📱 Guide Officiel 2026</div>
+          <div className="hero-badge">🚀 Le Guide N°1 Francophone 2026</div>
           <h1>Poppo Live</h1>
           <p className="hero-subtitle">
             Le guide le plus complet pour maîtriser Poppo Live — Devenez Host, Agent, ou optimisez votre expérience de Viewer. 18 sections, zéro zone d&apos;ombre.
